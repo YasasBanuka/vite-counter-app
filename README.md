@@ -36,10 +36,6 @@ You need to have [Node.js](https://nodejs.org/) and `npm` installed on your mach
 ### Installation
 
 1.  **Clone the repository:**
-    ```sh
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-    ```
-    *(Replace `YOUR_USERNAME` and `YOUR_REPOSITORY_NAME` with your actual GitHub details)*
 
 2.  **Navigate to the project directory:**
     ```sh
