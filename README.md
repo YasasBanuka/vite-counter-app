@@ -1,6 +1,6 @@
 # React Counter App
 
-A clean and simple counter application built as a foundational project for learning modern web development with React and Vite. This project focuses on core concepts and best practices in a clear and concise manner.
+An interactive counter application built with React and Vite. This project demonstrates fundamental and intermediate React concepts by creating a dynamic and responsive user interface.
 
 ![Counter App Screenshot](counterappsnip.png) 
 
@@ -8,9 +8,11 @@ A clean and simple counter application built as a foundational project for learn
 
 ## ✨ Features
 
-* **Increment:** Increase the count by one.
-* **Decrement:** Decrease the count by one.
-* **Responsive:** Simple and clean interface that works on all screen sizes.
+* **Increment/Decrement:** Increase or decrease the count.
+* **Non-Negative Guard:** Prevents the counter from going below zero.
+* **Set Custom Count:** Use the input field to set the counter to any non-negative number.
+* **Reset:** Instantly reset the counter back to zero.
+* **Smart Button:** The "Set Count" button is disabled until you type a number, preventing empty inputs.
 
 ---
 
@@ -36,10 +38,13 @@ You need to have [Node.js](https://nodejs.org/) and `npm` installed on your mach
 ### Installation
 
 1.  **Clone the repository:**
+      ```sh
+    git clone https://github.com/YasasBanuka/vite-counter-app.git
+    ```
 
 2.  **Navigate to the project directory:**
     ```sh
-    cd YOUR_REPOSITORY_NAME
+    cd vite-counter-app
     ```
 
 3.  **Install NPM packages:**
@@ -60,9 +65,8 @@ The application will now be running on `http://localhost:5173` (or the next avai
 
 This project served as a hands-on exercise to understand and implement the following core React concepts:
 
-* **Component-Based Architecture:** Structuring the UI into reusable, self-contained components (`Counter.jsx`).
-* **State Management:** Using the `useState` hook to manage and update component state.
-* **Event Handling:** Capturing user interactions (like button clicks) with `onClick` event handlers.
-* **JSX Syntax:** Writing declarative UI inside JavaScript.
-* **Functional State Updates:** Using a callback function (`setCount(prevCount => prevCount + 1)`) to ensure safe and predictable state transitions.
-* **Modern Development Workflow:** Utilizing Vite for project scaffolding and running a fast development server.
+* **State Management (`useState`):** Managing multiple pieces of state (`count`, `inputNum`) within a single component.
+* **Controlled Components:** Binding the value of an input field to the component's state to create a single source of truth.
+* **Event Handling(`onClick`, `onChange`):** Capturing user interactions to trigger state updates and logic.
+* **Conditional Logic:** Conditionally disabling a button based on the component's state (`disabled={inputNum === ""}`).
+* **Functional State Updates:** Using a callback function (`setCount(prevCount => ...`) to ensure safe and predictable state transitions based on the previous state.
